@@ -814,9 +814,9 @@ font_size 16.0
 
 #: Window layout {{{
 
-# remember_window_size  yes
-# initial_window_width  640
-# initial_window_height 400
+remember_window_size  no
+initial_window_width  80c
+initial_window_height 20c
 
 #: If enabled, the OS Window size will be remembered so that new
 #: instances of kitty will have the same size as the previous
@@ -896,8 +896,7 @@ window_padding_width  5
 #: only at the bottom and right edges. The value can be one of: top-
 #: left, top, top-right, left, center, right, bottom-left, bottom,
 #: bottom-right.
-
-active_border_color #00ff00 
+# active_border_color #00ff00 
 
 #: The color for the border of the active window. Set this to none to
 #: not draw borders around the active window.
@@ -1934,6 +1933,7 @@ tab_title_template "{index}:{tab.active_wd}"
 #: cause all invocations of the hints kitten to have the --hints-
 #: offset=0 option applied.
 
+
 #: Clipboard {{{
 
 #: Copy to clipboard
@@ -2593,3 +2593,9 @@ tab_title_template "{index}:{tab.active_wd}"
 
 #: }}}
 
+
+
+# BEGIN_KITTY_THEME
+# Night Owl
+include current-theme.conf
+# END_KITTY_THEME
