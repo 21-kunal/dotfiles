@@ -2596,6 +2596,6 @@ tab_title_template "{index}:{tab.active_wd}"
 
 
 # BEGIN_KITTY_THEME
-# Night Owl
+# Cyberpunk Neon
 include current-theme.conf
 # END_KITTY_THEME
