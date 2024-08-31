@@ -153,3 +153,8 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/dotfiles/p10k/.p10k.zsh ]] || source ~/dotfiles/p10k/.p10k.zsh
+
+alias nv="nvim"
+
+#flatpak
+export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/kunal/.local/share/flatpak/exports/share:$XDG_DATA_DIRS
