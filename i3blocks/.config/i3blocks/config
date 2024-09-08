@@ -52,12 +52,12 @@ separator=true
 interval=30
 color=#00FF00
 
-[memory]
-label=SWAP 
-instance=swap
-separator=true
-interval=30
-color=#FFA500
+#[memory]
+#label=SWAP 
+#instance=swap
+#separator=true
+#interval=30
+#color=#FFA500
 
 # Disk usage
 #
@@ -90,29 +90,61 @@ color=#FF0000
 #INTERFACE=eth0
 #interval=5
 
-# CPU usage
-#
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[cpu_usage]
-label=CPU 
-interval=10
-min_width=CPU 100.00%
-separator=true
-color=#FF0000
+[bandwidth]
+interval=5
+color=#00FF00
+INTERFACE=wlp0s20f3
+INLABEL=↓ 
+OUTLABEL=↑ 
+#TREAT_UNKNOWN_AS_UP=0
 
+
+[cpu_util_detailed]
+label=CPU
+markup=pango
+interval=-2
+#report_time=5
+#stats=usr nice sys iowait
+#format=%6.2f
+#warn=80
+#usr_color=green
+#nice_color=yellow
+#sys_color=red
+#iowait_color=grey
+#irq_color=purple
+#soft_color=violet
+#steal_color=orange
+#guest_color=cyan
+#gnice_color=blue
+#idle_color=white
+#total_color=white
 #[load_average]
 #label=LOAD 
 #interval=10
 
-# Battery indicator
-#
-# The battery instance defaults to 0.
-[battery]
-label=BAT 
-#label=⚡ 
+[battery2]
+markup=pango
 interval=30
-color=#40E0D0
+
+
+[monitor_manager]
+interval=once
+separator=true
+SHOW_ON_OFF=1
+SHOW_NAMES=1
+SHOW_PRIMARY=1
+SHOW_MODE=1
+SHOW_BLANKED=1
+SHOW_DUPLICATE=1
+SHOW_ROTATION=1
+SHOW_REFLECTION=1
+SHOW_BRIGHTNESS=1
+SHOW_BRIGHTNESS_VALUE=1
+SHOW_UP_DOWN=1
+FONT_FAMILY=JetBrainsMono Nerd Font
+FONT_SIZE=14
+CLOSE_TO_BOUNDARY_BUFFER=20
+
 
 # Date Time
 #
@@ -172,3 +204,5 @@ color=#FF1493
 #markup=pango
 #interval=once
 #signal=11
+#
+#
