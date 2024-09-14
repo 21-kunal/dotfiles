@@ -12,6 +12,8 @@
 set $mod Mod1
 set $super Mod4
 
+
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:JetBrainsMono Nerd Font 13
@@ -195,8 +197,7 @@ bar {
 
 
 # Custom config
-exec --no-startup-id feh --bg-scale ~/wallpapers/fabien-martin-srgUf2-Qcms-unsplash.png
-
+exec --no-startup-id feh --bg-scale ~/wallpapers/nice-blue-background.png
 
 for_window [class=".*"] border pixel 2
 
