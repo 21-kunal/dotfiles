@@ -71,7 +71,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -134,6 +134,9 @@ export PATH=$PATH:$SPARK_HOME/bin
 ZIPS=("${SPARK_HOME}/python/lib/*.zip")
 export PYTHONPATH=$(IFS=:; echo "${ZIPS[*]}"):$PYTHONPATH
 
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+
 #neo-vim
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
@@ -144,3 +147,6 @@ export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/kunal/.local/share/fla
 
 export LC_ALL=en_IN.UTF-8
 export LANG=en_IN.UTF-8
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
