@@ -1,9 +1,9 @@
 [submodule "oh-my-zsh/.oh-my-zsh"]
 	path = oh-my-zsh/.oh-my-zsh
-	url = git@github.com-21-kunal:ohmyzsh/ohmyzsh.git
+	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "i3blocks/.config/i3blocks/scripts"]
 	path = i3blocks/.config/i3blocks/scripts
-	url = git@github.com-21-kunal:21-kunal/i3blocks-contrib.git
+	url = https://github.com/21-kunal/i3blocks-contrib.git
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = https://github.com/21-kunal/kickstart.nvim.git
