@@ -61,7 +61,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec rofi -show drun
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -197,9 +198,11 @@ bar {
 
 
 # Custom config
-exec --no-startup-id feh --bg-scale ~/wallpapers/nice-blue-background.png
+exec --no-startup-id feh --randomize --bg-scale ~/wallpapers/
+bindsym $mod+$super+b  exec --no-startup-id feh --randomize --bg-scale ~/wallpapers/
+
 
 for_window [class=".*"] border pixel 2
 
-bindsym $mod+$super+l exec --no-startup-id i3lock -i ~/wallpapers/fabien-martin-srgUf2-Qcms-unsplash.png
+bindsym $mod+$super+l exec --no-startup-id i3lock -i ~/wallpapers/lockscreen/fabien-martin-srgUf2-Qcms-unsplash.png
 bindsym $mod+n exec --no-startup-id kitty --hold nvim
