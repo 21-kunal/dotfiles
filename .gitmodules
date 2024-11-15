@@ -4,6 +4,3 @@
 [submodule "i3blocks/.config/i3blocks/scripts"]
 	path = i3blocks/.config/i3blocks/scripts
 	url = git@github.com-21-kunal:21-kunal/i3blocks-contrib.git
-[submodule "nvim/.config/nvim"]
-	path = nvim/.config/nvim
-	url = git@github.com-21-kunal:21-kunal/kickstart.nvim.git
