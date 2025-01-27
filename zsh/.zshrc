@@ -150,3 +150,4 @@ export LANG=en_IN.UTF-8
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+. "/home/kunal/.deno/env"
