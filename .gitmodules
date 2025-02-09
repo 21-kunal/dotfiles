@@ -6,4 +6,4 @@
 	url = https://github.com/21-kunal/i3blocks-contrib.git
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = https://github.com/21-kunal/kickstart.nvim.git
+	url = https://github.com/21-kunal/nvim.git
